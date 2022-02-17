@@ -1,0 +1,88 @@
+.Pflex >.xx> img{
+    width:150px;
+    height:200px;
+    border: 4px solid rgb(131, 11, 131);
+    border-radius: 20%;
+}
+.Pflex{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    width:350px;
+    border: 1px solid;
+    border-image:linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    border-radius: 10%;
+}
+.Pitem{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.xx{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.xxright{
+    display: flex;
+    flex-direction: column;
+}
+.xxitem{
+    margin-top: 20px;
+}
+.photo{
+    margin-top: 20px;
+    width: 140px;
+    background-image: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    border-image: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    border-radius: 20%;
+}
+.xxholder{
+    color: rgb(156, 14, 156);
+    height: 30px;
+    width:160px;
+}
+.xxholder:hover{
+    color:midnightblue;
+}
+.pbtn{
+    color:white;
+    margin-top: 30px;
+    width: 160px;
+    height:40px;   
+    background-image: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    border-image: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+    border-radius: 20%;
+}
+.pbtn:hover{
+    cursor: pointer;
+}
+.xxname{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight:bold;
+}
+@media screen and (max-width: 700px) {
+.Pflex{
+  flex-grow: 1;
+  align-items: center;
+}
+.Pmain{
+     display: flex;
+        
+}
+    
+}
+
+

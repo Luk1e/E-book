@@ -1,0 +1,136 @@
+
+.App{
+     background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);   
+        }
+h1{
+    font-size: 3rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-reverse{
+    display: flex;
+    flex-direction: column;
+}
+.flex-reverse > h3{
+    padding: 10px;
+}
+.author, .owner{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    color:#037FFF;   
+}
+
+span{
+    color: #037FFF;
+}
+.title{
+    padding: 2rem 0;
+    text-align: center;
+}
+.title:hover{
+    transform: scale(1.1);
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+h2:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: #037FFF;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.item{
+    display:grid;
+    width:90vw;
+    /* grid-template-columns: auto auto auto auto;  */
+     grid-template-columns: repeat( auto-fit, minmax(250px, 400px) );
+    grid-gap: 3rem;
+    padding-bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+.item-con{
+    width: 100%;
+    padding: 1.2rem 1.2rem;
+    background-color: #19202E;
+}
+.item-con:hover{
+   transform: scale(1.1);
+   background-color:#0C3564;
+}
+
+.flex > img{
+    width: 200px;
+    height: 300px;
+    transition: all .3s ease-in-out;
+}
+
+.flex > img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+.buttons{
+    width: 100%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.butty{
+    margin-left: 10px;
+    padding: .5rem 2rem;
+  background:linear-gradient(45deg, rgb(156, 14, 156), midnightblue);  
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+     cursor: pointer;
+     border: 1px solid rgb(156, 14, 156);
+     border-radius: 10%;
+}
+.butty:hover{
+    color:midnightblue;
+    transform: scale(1.1);
+}
+
+.btn:not(:last-child){
+    margin-right: 1rem;
+}
+
+.btn:hover{
+    background-color: #037FFf;
+    cursor: pointer;
+}
+
+.btn:active, .btn:focus{
+    outline: none;
+    border: none;
+}
+@media  screen and (max-width:500px) {
+    .item{
+        overflow-x: hidden;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 300px) );
+    }
+    .item-con:hover{
+   transform: none;
+   background-color: #19202E;
+}
+    
+}
